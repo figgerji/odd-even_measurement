@@ -20,7 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 //? V2奇偶周期计数方案，奇偶每次应答可能错位，取idle后进入的第一个周期为奇数周期
 //? 取使能后的第一个上升沿开始计数，在经历指定cycle后的第一个上升沿后的第3个clk上报计数，3个clk使用计数结果进行运算
-// ?///
 
 module Cycle_measurement(input sys_rstn,                                        // *复位
                          input sys_clk,                                         // *系统时钟100MHz
@@ -237,3 +236,4 @@ module Cycle_measurement(input sys_rstn,                                        
     assign average_odd  = sum_odd>>right_shift;
     assign average_even = sum_even>>right_shift;
 endmodule
+// 大大师傅
