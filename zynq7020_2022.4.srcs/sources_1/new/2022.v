@@ -236,4 +236,3 @@ module Cycle_measurement(input sys_rstn,                                        
     assign average_odd  = sum_odd>>right_shift;
     assign average_even = sum_even>>right_shift;
 endmodule
-// 大大师傅
